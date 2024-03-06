@@ -88,13 +88,20 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                             ),
                           ),
                           alignment: const AlignmentDirectional(-1.0, 0.0),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(8.0),
-                            child: Image.network(
-                              'https://picsum.photos/seed/298/600',
-                              width: 300.0,
-                              height: 200.0,
-                              fit: BoxFit.cover,
+                          child: Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                145.0, 0.0, 0.0, 0.0),
+                            child: Container(
+                              width: 100.0,
+                              height: 100.0,
+                              clipBehavior: Clip.antiAlias,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                              ),
+                              child: Image.network(
+                                'https://pbs.twimg.com/profile_images/1495407616742277124/Sk6F0UOk_400x400.png',
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),

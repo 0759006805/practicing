@@ -11,22 +11,22 @@ service cloud.firestore {
     match /Notifications/{document} {
       allow create: if true;
       allow read: if true;
-      allow write: if true;
-      allow delete: if true;
+      allow write: if false;
+      allow delete: if false;
     }
 
     match /SettingsCollectio/{document} {
       allow create: if true;
       allow read: if true;
-      allow write: if true;
-      allow delete: if true;
+      allow write: if false;
+      allow delete: if false;
     }
 
     match /SettingsCollectio/{parent}/userSetting/{document} {
       allow create: if true;
       allow read: if true;
-      allow write: if true;
-      allow delete: if true;
+      allow write: if false;
+      allow delete: if false;
     }
 
     match /{path=**}/userSetting/{document} {
@@ -37,29 +37,29 @@ service cloud.firestore {
     match /FinancialServicesCollection/{document} {
       allow create: if true;
       allow read: if true;
-      allow write: if true;
-      allow delete: if true;
+      allow write: if false;
+      allow delete: if false;
     }
 
     match /WeatherDataCollection/{document} {
       allow create: if true;
       allow read: if true;
-      allow write: if true;
-      allow delete: if true;
+      allow write: if false;
+      allow delete: if false;
     }
 
     match /Applications/{document} {
       allow create: if true;
       allow read: if true;
-      allow write: if true;
-      allow delete: if true;
+      allow write: if false;
+      allow delete: if false;
     }
 
     match /Applications/{parent}/service/{document} {
       allow create: if true;
       allow read: if true;
-      allow write: if true;
-      allow delete: if true;
+      allow write: if false;
+      allow delete: if false;
     }
 
     match /{path=**}/service/{document} {
